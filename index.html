@@ -6,6 +6,21 @@
   <body>
     <div>
       HOLA MUNDO, ESTO ES UNA PRUEBA DE GIT
+      <form action="">
+        <input  id="txt_numbers" type="text" value="">
+        <input  id="txt_base" type="text" value="">
+        <a href="javascript:transform()">PROCESS</a>
+      </form>
     </div>
+    <script type="text/javascript">
+      function transform() {
+        var numers = document.getElementById("txt_numbers").value;
+        var base = document.getElementById("txt_base").value;
+        alert(converTo(Number(numers),base));
+      }
+    </script>
+    <script type="text/javascript" src="./js/primos.js">
+
+    </script>
   </body>
 </html>
