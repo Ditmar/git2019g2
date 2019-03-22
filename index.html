@@ -7,9 +7,13 @@
     <div>
       HOLA MUNDO, ESTO ES UNA PRUEBA DE GIT
       <form action="">
-        <input  id="txt_numbers" type="text" value="">
-        <input  id="txt_base" type="text" value="">
+        <input  id="txt_numbers" type="text" value="" placeholder="ponga numeros">
+        <input  id="txt_base" type="text" value="" placeholder="ponga la base">
         <a href="javascript:transform()">PROCESS</a>
+        <br>
+        <input  id="txt_primos" type="text" value="" placeholder="numeros primos">
+        <a href="javascript:primos_num()">PROCESS</a>
+
       </form>
     </div>
     <script type="text/javascript">
@@ -17,6 +21,14 @@
         var numers = document.getElementById("txt_numbers").value;
         var base = document.getElementById("txt_base").value;
         alert(converTo(Number(numers),base));
+      }
+      function primos_num() {
+        var numers = document.getElementById("txt_primos").value;
+        if (primos(Number(numers))) {
+          alert("Es primo")
+        } else {
+          alert("No es primo")
+        }
       }
     </script>
     <script type="text/javascript" src="./js/primos.js">
