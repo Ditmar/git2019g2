@@ -9,3 +9,9 @@ function primos(numbers) {
   }
   return true;
 }
+function redondear (numbers) {
+  return Math.round(numbers);
+}
+function convertToRadianes(angulo) {
+  return (angulo/180) * Math.PI;
+}
