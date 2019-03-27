@@ -33,4 +33,9 @@ function solveEcuation(a, b, c) {
   } else {
     return  {x1: (-b + Math.sqrt(dist)) / 2 * a, x2: (-b - Math.sqrt(dist)) / 2 * a,  "msn" : "Sol Compleja"};
   }
+function redondear (numbers) {
+  return Math.round(numbers);
+}
+function convertToRadianes(angulo) {
+  return (angulo/180) * Math.PI;
 }
